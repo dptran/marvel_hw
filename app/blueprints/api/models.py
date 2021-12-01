@@ -18,5 +18,4 @@ class Collection(db.Model):
             'date_created': self.date_created,
             'user': User.query.get(self.user_id).to_dict()
         }
-        # data['user'].extend()
         return data

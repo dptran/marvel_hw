@@ -2,4 +2,4 @@ from flask import Blueprint
 
 bp = Blueprint('api', __name__, url_prefix='/api')
 
-from .import users, tokens, posts, collect
+from .import users, tokens, posts

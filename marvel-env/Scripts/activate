@@ -28,7 +28,10 @@ deactivate () {
     fi
 
     unset VIRTUAL_ENV
+<<<<<<< HEAD
     unset VIRTUAL_ENV_PROMPT
+=======
+>>>>>>> eef9db4ed2bf415e0ca66ce16e365942756f774f
     if [ ! "${1:-}" = "nondestructive" ] ; then
     # Self destruct!
         unset -f deactivate
@@ -38,7 +41,11 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
+<<<<<<< HEAD
 VIRTUAL_ENV="C:\Users\trand\coding_temple\cohorts\2021\december\week_01\01\fakebook-october\marvel-env"
+=======
+VIRTUAL_ENV="C:\Users\trand\coding_temple\cohorts\2021\december\week_01\01\marvel\marvel-env"
+>>>>>>> eef9db4ed2bf415e0ca66ce16e365942756f774f
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
@@ -57,8 +64,11 @@ if [ -z "${VIRTUAL_ENV_DISABLE_PROMPT:-}" ] ; then
     _OLD_VIRTUAL_PS1="${PS1:-}"
     PS1="(marvel-env) ${PS1:-}"
     export PS1
+<<<<<<< HEAD
     VIRTUAL_ENV_PROMPT="(marvel-env) "
     export VIRTUAL_ENV_PROMPT
+=======
+>>>>>>> eef9db4ed2bf415e0ca66ce16e365942756f774f
 fi
 
 # This should detect bash and zsh, which have a hash command that must

@@ -10,9 +10,6 @@ from flask_login import login_user, logout_user, current_user
 @app.route('/')
 def home():
     context = {
-        'first_name': 'Derek',
-        'last_name': 'Hawkins',
-        'email': 'derekhcodingtemple.com',
         'posts': Post.query.order_by(Post.date_created.desc()).all()
     }
     return render_template('index.html', **context)

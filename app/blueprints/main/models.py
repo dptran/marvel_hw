@@ -10,7 +10,7 @@ class Post(db.Model):
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
 
     def to_dict(self):
-        t
+        
         from app.blueprints.auth.models import User
 
         data = {

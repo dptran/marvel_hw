@@ -2,6 +2,7 @@ from app import cli, create_app, db
 from app.blueprints.shop.models import Product
 from app.blueprints.auth.models import User
 from app.blueprints.main.models import Post
+from app.blueprints.api.models import Collection
 
 app = create_app()
 cli.register(app)
@@ -13,4 +14,5 @@ def make_context():
         'Product': Product,
         'User': User,
         'Post': Post,
+        'Collection' : Collection,
     }
